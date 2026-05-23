@@ -6,18 +6,7 @@ const config: Config = {
     extend: {
       colors: {
         malva: {
-          50: "#f6f3f8",
-          100: "#eddfe9",
-          200: "#dac9ed", // Tu color lavanda claro
-          300: "#c2add7",
-          400: "#aa91c1",
-          500: "#9667ad", // Tu color violeta principal
-          600: "#7e5294",
-          700: "#663f7a",
-          800: "#4f2d5e",
-          900: "#381c44",
-        },
-        ciruela: {
+          // Aquí colocamos tus naranjas como color secundario/de acento
           50: "#fff6f0",
           100: "#ffedd3",
           200: "#f2d1ae", // Tu color arena/naranja suave
@@ -28,6 +17,19 @@ const config: Config = {
           700: "#a14318",
           800: "#752e0e",
           900: "#4a1b05",
+        },
+        ciruela: {
+          // Aquí colocamos tus morados/lavanda como el color PREDOMINANTE (botones, enlaces, etc.)
+          50: "#f6f3f8",
+          100: "#eddfe9",
+          200: "#dac9ed", // Tu color lavanda claro
+          300: "#c2add7",
+          400: "#aa91c1",
+          500: "#9667ad", // Tu color violeta principal
+          600: "#7e5294",
+          700: "#663f7a",
+          800: "#4f2d5e",
+          900: "#381c44",
         },
         arena: {
           50: "#faf9f8",
@@ -55,14 +57,14 @@ const config: Config = {
         },
       },
       fontFamily: {
-        // Configuramos tu tipografía "YDYoonche UL". Si el navegador aún no la encuentra, usará "Inter" temporalmente.
+        // Mantenemos la tipografía lista para cuando se instale el archivo
         sans: ["var(--font-yoonche)", "YDYoonche UL", "var(--font-inter)", "system-ui", "sans-serif"],
         serif: ["var(--font-playfair)", "Georgia", "serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-soft":
-          "linear-gradient(135deg, #f6f3f8 0%, #fff6f0 50%, #f5f2ee 100%)", // Tu nuevo degradado suave
+          "linear-gradient(135deg, #f6f3f8 0%, #eddfe9 50%, #faf9f8 100%)", // Degradado inclinado hacia los tonos lavanda
       },
     },
   },
