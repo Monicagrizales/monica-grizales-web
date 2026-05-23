@@ -1,5 +1,5 @@
-import { useState } from "react";
-
+import type { Config } from "tailwindcss";
+const config: Config = {
 const palette = {
   malva: {
     50:  { hex: "#fff6f0", label: "malva-50" },
